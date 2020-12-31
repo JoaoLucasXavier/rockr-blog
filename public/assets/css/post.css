@@ -1,0 +1,30 @@
+body {
+  box-shadow: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  display: block;
+  background-color: white;
+  min-height: 80vh;
+  width: 80vw;
+  margin-top: 50px;
+}
+
+.post > header {
+  display: flex;
+}
+
+.p-image {
+    background-color: red;
+    height: 640px;
+    width: 640px;
+}
+
+p-infor {
+}
