@@ -1,0 +1,41 @@
+.p-line-1 {
+  display: flex;
+  height: 320px;
+  margin-top: 100px;
+}
+
+.p-line-1 > div {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.p-line-1-image {
+  width: 320px;
+}
+
+.p-line-1-content {
+  flex-grow: 1;
+}
+
+.p-line-2 {
+  display: flex;
+  height: 320px;
+  margin-top: 100px;
+}
+
+.p-line-2 > div {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.p-line-2-blank {
+  flex-grow: 1;
+}
+
+.p-line-2-image {
+  width: 320px;
+}
+
+.p-line-2-content {
+  flex-grow: 2;
+}

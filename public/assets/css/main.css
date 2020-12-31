@@ -6,7 +6,7 @@
 .main {
   display: grid;
   grid-template-areas: "nav" "content";
-  grid-template-rows: 10vh 90vh;
+  grid-template-rows: 100px 100%;
   font-family: "Rubik", sans-serif;
 }
 
