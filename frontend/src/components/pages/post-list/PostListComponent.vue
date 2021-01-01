@@ -33,6 +33,7 @@ export default {}
 </script>
 
 <style scoped>
+
 .p-line-1 {
   display: flex;
   height: 320px;

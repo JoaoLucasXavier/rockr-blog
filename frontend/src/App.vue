@@ -1,6 +1,7 @@
 <template>
   <section class="main">
     <navbar></navbar>
+    <contact></contact>
     <section class="content">
       <router-view></router-view>
     </section>
@@ -10,11 +11,13 @@
 <script>
 
 import navbar from './components/nav/NavBarComponent'
+import contact from './components/pages/contact/ContactComponent'
 
 export default {
   name: 'main',
   components: {
-    navbar
+    navbar,
+    contact
   }
 }
 </script>
@@ -28,7 +31,7 @@ export default {
 
 body {
   background: linear-gradient(90deg, #f1a10a 0%, #342303 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 .main {
