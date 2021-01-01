@@ -8,32 +8,11 @@
 </template>
 
 <script>
-
-// import '@/assets/js/contact-modal'
-//
+import modal from '../../../assets/js/contact-modal'
 
 export default {
-  mounted () {
-    var modal = document.getElementById("contact-modal");
-
-    var btn = document.getElementById("contact-btn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-
+  mounted() {
+    modal()
   },
 }
 

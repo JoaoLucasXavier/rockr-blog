@@ -1,19 +1,19 @@
-var modal = document.getElementById("contact-modal");
+export default () => {
+    let modal = document.getElementById("contact-modal")
+    let btn = document.getElementById("contact-btn")
+    let span = document.getElementsByClassName("close")[0]
 
-var btn = document.getElementById("contact-btn");
+    btn.onclick = function () {
+        modal.style.display = "block"
+    }
 
-var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        modal.style.display = "none"
+    }
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none"
+        }
+    }
+}
