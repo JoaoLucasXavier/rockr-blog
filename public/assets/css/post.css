@@ -26,5 +26,12 @@ body {
     width: 640px;
 }
 
-p-infor {
+.p-infor {
+    padding: 200px;
+}
+
+.post > article {
+    padding: 100px 200px;
+    height: 640px;
+    width: 640px;
 }
