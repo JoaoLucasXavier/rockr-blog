@@ -1,6 +1,6 @@
 export default () => {
-    let modal = document.getElementById("contact-modal")
-    let btn = document.getElementById("contact-btn")
+    let modal = document.getElementById("modal")
+    let btn = document.getElementById("modal-btn")
     let span = document.getElementsByClassName("close")[0]
 
     btn.onclick = function () {

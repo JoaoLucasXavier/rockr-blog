@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap');
+@import './colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, $bg1 0%, $bg2 100%);
+}

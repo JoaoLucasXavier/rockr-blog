@@ -4,22 +4,22 @@ import VueRouter from 'vue-router'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import HomeComponent from './components/pages/home/HomeComponent'
 import PostComponent from './components/pages/post/PostComponent'
-import PostListComponent from './components/pages/post-list/PostListComponent'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', name: 'post-list', component: PostListComponent },
-  { path: '/post', name: 'post', component: PostComponent },
+    {path: '/', name: 'home', component: HomeComponent},
+    {path: '/post', name: 'post', component: PostComponent},
 ]
 
 const router = new VueRouter({
-  routes
+    routes
 })
 
 new Vue({
-  router,
-  render: h => h(App),
+    router,
+    render: h => h(App),
 }).$mount('#app')
