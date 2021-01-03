@@ -15,7 +15,9 @@ export default {}
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import './src/assets/scss/main';
+
 .content {
   display: flex;
   justify-content: center;
@@ -24,7 +26,7 @@ export default {}
 
 .post {
   display: block;
-  background-color: white;
+  background-color: $postContentBg;
   min-height: 80vh;
   width: 80vw;
   margin-top: 50px;

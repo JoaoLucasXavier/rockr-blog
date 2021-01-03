@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './src/assets/scss/main';
+
 .modal {
   display: none;
   position: fixed;
@@ -42,10 +44,10 @@ export default {
 .modal-content {
   display: flex;
   flex-direction: column;
-  background-color: #fefefe;
+  background-color: $modalBg;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid $modalBorder;
   width: 500px;
   height: 620px;
 
@@ -60,7 +62,7 @@ export default {
 .close {
   span:hover,
   span:focus {
-    color: #000;
+    color: $modalHover;
     text-decoration: none;
     cursor: pointer;
   }

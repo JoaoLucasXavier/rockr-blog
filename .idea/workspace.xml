@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73290459-1ab8-429d-8a48-68b95ee94eaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/scss/_main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/blog/components/navBar/NavBarComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/HomeComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/js/contact-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/js/contact-modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/nav/NavBarComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/BlogComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/blog/BlogComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/components/modal/ModalComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/blog/components/modal/ModalComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/blog/components/navBar/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/blog/components/navBar/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,7 @@
       <workItem from="1609432849637" duration="675000" />
       <workItem from="1609515536003" duration="12935000" />
       <workItem from="1609636199383" duration="340000" />
-      <workItem from="1609682648450" duration="18169000" />
+      <workItem from="1609682648450" duration="20355000" />
     </task>
     <servers />
   </component>

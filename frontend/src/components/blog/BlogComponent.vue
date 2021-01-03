@@ -27,5 +27,6 @@ export default {
   grid-template-rows: 100px 100%;
   font-family: "Rubik", sans-serif;
 }
+
 </style>
 
