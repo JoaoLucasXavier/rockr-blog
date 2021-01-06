@@ -1,0 +1,34 @@
+version: "3.8"
+volumes:
+  php-fpm-socket:
+  db-store:
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./infra/docker/php/Dockerfile
+    volumes:
+      - php-fpm-socket:/var/run/php-fpm
+      - ./api:/work/api
+
+  web:
+    build:
+      context: .
+      dockerfile: ./infra/docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - php-fpm-socket:/var/run/php-fpm
+      - ./api:/work/api
+
+  db:
+    build:
+      context: .
+      dockerfile: ./infra/docker/mysql/Dockerfile
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-store:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=rockr_blog
+      - MYSQL_ROOT_PASSWORD=root
