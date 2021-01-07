@@ -1,43 +1,79 @@
 <template>
   <article>
 
-    <ul v-for="post of posts" :key="post.id">
-      <li>{{ post.author }}</li>
-      <li>{{ post.title }}</li>
-      <li>{{ post.text }}</li>
-      <li>{{ post.image }}</li>
-      <li>
-        <router-link class="item" :to="{ name: 'post', params: { postId: post.id } }">Post</router-link>
-      </li>
-      <br>
-      <hr>
-    </ul>
+<!--    <ul v-for="(post, index) of posts" :key="post.id">-->
+<!--      <li>{{ post.author }}</li>-->
+<!--      <li>{{ post.title }}</li>-->
+<!--      <li>{{ post.text }}</li>-->
+<!--      <li>{{ post.image }}</li>-->
+<!--      <li>-->
+<!--        <router-link class="item" :to="{ name: 'post', params: { postId: post.id } }"><i-->
+<!--            class="fas fa-angle-double-right ico"></i></router-link>-->
+<!--      </li>-->
+<!--      <li>{{ index + 1 }}</li>-->
+<!--      <br>-->
+<!--      <hr>-->
+<!--    </ul>-->
 
-    <div class="p-line-1">
-      <div class="p-line-1-image"></div>
-      <div class="p-line-1-content"></div>
-      <div class="p-line-1-image"></div>
-      <div class="p-line-1-content"></div>
-    </div>
 
-    <div class="p-line-2">
-      <div class="p-line-2-blank"></div>
-      <div class="p-line-2-image"></div>
-      <div class="p-line-2-content"></div>
-    </div>
+<!--    <div v-for="(post) of posts" :key="post.id">-->
+      <div v-for='index in Math.floor(((posts.length / 3) * 2))' :key='index'>
+        <!--      <h1>{{posts.length}}</h1>-->
+<!--        <h1>{{ index }}</h1>-->
+        <h6>{{ posts[0].image }}</h6>
 
-    <div class="p-line-3">
-      <div class="p-line-3-content"></div>
-      <div class="p-line-3-image"></div>
-      <div class="p-line-3-content"></div>
-      <div class="p-line-3-image"></div>
-    </div>
 
-    <div class="p-line-4">
-      <div class="p-line-4-image"></div>
-      <div class="p-line-4-blank"></div>
-      <div class="p-line-4-content"></div>
-    </div>
+        <div v-if="(index % 2 === 1)">
+
+
+
+          <div v-if="(index % 2 === 0)">
+            <div class="p-line-1">
+              <div class="p-line-1-image">
+<!--                <img src="}" alt="">-->
+              </div>
+              <div class="p-line-1-content"></div>
+              <div class="p-line-1-image"></div>
+              <div class="p-line-1-content"></div>
+            </div>
+          </div>
+          <div v-else>
+            <div class="p-line-3">
+              <div class="p-line-3-content"></div>
+              <div class="p-line-3-image"></div>
+              <div class="p-line-3-content"></div>
+              <div class="p-line-3-image"></div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div v-else>
+
+
+
+          <div v-if="(index % 2 === 0)">
+            <div class="p-line-2">
+              <div class="p-line-2-blank"></div>
+              <div class="p-line-2-image"></div>
+              <div class="p-line-2-content"></div>
+            </div>
+          </div>
+          <div v-else>
+            <div class="p-line-4">
+              <div class="p-line-4-image"></div>
+              <div class="p-line-4-blank"></div>
+              <div class="p-line-4-content"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+<!--    </div>-->
+
   </article>
 </template>
 
