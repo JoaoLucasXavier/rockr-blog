@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="73290459-1ab8-429d-8a48-68b95ee94eaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/post-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/post-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/services" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -163,6 +162,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/services" />
       <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/frontend/src/components/blog" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/js" />
@@ -220,7 +220,8 @@
       <workItem from="1609952586573" duration="10534000" />
       <workItem from="1609967442071" duration="19917000" />
       <workItem from="1610020160428" duration="4174000" />
-      <workItem from="1610024553342" duration="5364000" />
+      <workItem from="1610024553342" duration="10963000" />
+      <workItem from="1610042602069" duration="608000" />
     </task>
     <servers />
   </component>
