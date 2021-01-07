@@ -46,15 +46,15 @@ export default {
   flex-direction: column;
   background-color: $modalBg;
   margin: auto;
-  padding: 20px;
+  padding: 20px 40px;
   border: 1px solid $modalBorder;
-  width: 500px;
-  height: 620px;
+  width: 600px;
+  height: 720px;
 
   span {
     float: right;
-    color: #aaaaaa;
-    font-size: 28px;
+    color: #2D2D2D;
+    font-size: 45px;
     font-weight: bold;
   }
 }

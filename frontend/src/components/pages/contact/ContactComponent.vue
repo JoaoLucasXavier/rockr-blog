@@ -20,9 +20,12 @@
         </div>
         <div class="form-group">
           <label for="post">Post</label>
-          <textarea class="form-control" id="post" rows="3" v-model="data.message"></textarea>
+          <textarea class="form-control" id="post" rows="6" placeholder="Hello..." v-model="data.message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary center">Submit</button>
+        <div class="form-btn">
+          <button type="submit" class="btn btn-dark center"><i class="fas fa-angle-double-right ico"></i> Submit
+          </button>
+        </div>
       </form>
     </modal>
   </div>
@@ -50,14 +53,47 @@ export default {
   methods: {
     save() {
       contact.save(this.data).then(response => {
-        alert("Salvo com sucesso!" + response)
+        console.log("Message sent successfully!" + response)
+        alert("Message sent successfully!")
       })
     }
   },
 }
-
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.header {
+  margin-bottom: 20px;
 
+  h3 {
+    color: #F1A10A;
+    font-weight: bold;
+  }
+}
+
+form {
+  label {
+    color: black;
+    margin-bottom: 5px;
+  }
+
+  input {
+    margin-bottom: 30px;
+  }
+
+  .form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    button {
+      font-weight: bold;
+      font-size: 18px;
+
+      .ico {
+        margin-right: 20px;
+      }
+    }
+  }
+}
 </style>
