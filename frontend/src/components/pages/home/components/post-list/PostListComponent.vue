@@ -6,6 +6,9 @@
       <li>{{ post.title }}</li>
       <li>{{ post.text }}</li>
       <li>{{ post.image }}</li>
+      <li>
+        <router-link class="item" :to="{ name: 'post', params: { postId: post.id } }">Post</router-link>
+      </li>
       <br>
       <hr>
     </ul>
@@ -43,7 +46,7 @@ import post from '@/services/post-service'
 
 export default {
   name: 'PostList',
-  data () {
+  data() {
     return {
       posts: []
     }

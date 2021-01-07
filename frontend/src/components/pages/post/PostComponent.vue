@@ -11,7 +11,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: "Post",
+  mounted() {
+    console.log(this.$route.params.postId);
+  },
+}
 
 </script>
 
