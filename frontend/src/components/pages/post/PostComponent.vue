@@ -1,6 +1,18 @@
 <template>
   <article class="content">
     <div class="post">
+
+
+      <ul>
+        <li>{{ post.author }}</li>
+        <li>{{ post.title }}</li>
+        <li>{{ post.text }}</li>
+        <li>{{ post.image }}</li>
+        <br>
+        <hr>
+      </ul>
+
+
       <header>
         <div class="p-image">IMAGE</div>
         <div class="p-infor">INFOR</div>
@@ -11,13 +23,25 @@
 </template>
 
 <script>
+import post from '@/services/post-service'
+
+
 export default {
   name: "Post",
+  data() {
+    return {
+      post: []
+    }
+  },
   mounted() {
-    console.log(this.$route.params.postId);
+    // console.log(response.data['Posts'][1])
+    // console.log(this.$route.params.postId)
+    post.listById(this.$route.params.postId).then(response => {
+      this.post = response.data.Post[0]
+      console.log(this.post.text)
+    })
   },
 }
-
 </script>
 
 <style lang="scss" scoped>

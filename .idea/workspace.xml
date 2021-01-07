@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/post-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/post-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +220,7 @@
       <workItem from="1609952586573" duration="10534000" />
       <workItem from="1609967442071" duration="19917000" />
       <workItem from="1610020160428" duration="4174000" />
-      <workItem from="1610024553342" duration="2259000" />
+      <workItem from="1610024553342" duration="5364000" />
     </task>
     <servers />
   </component>

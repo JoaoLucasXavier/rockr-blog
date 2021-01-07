@@ -2,7 +2,7 @@
   <article>
 
     <ul v-for="post of posts" :key="post.id">
-      <li>{{ post.author }}}</li>
+      <li>{{ post.author }}</li>
       <li>{{ post.title }}</li>
       <li>{{ post.text }}</li>
       <li>{{ post.image }}</li>
