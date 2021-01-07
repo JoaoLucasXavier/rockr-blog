@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="73290459-1ab8-429d-8a48-68b95ee94eaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/migrations/2021_01_06_200100_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2021_01_06_200100_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/migrations/2021_01_06_200111_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/migrations/2021_01_06_200111_create_contacts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/seeders/PostSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/contact/ContactComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +219,9 @@
       <workItem from="1609682648450" duration="20355000" />
       <workItem from="1609951874998" duration="700000" />
       <workItem from="1609952586573" duration="10534000" />
-      <workItem from="1609967442071" duration="7109000" />
+      <workItem from="1609967442071" duration="19917000" />
+      <workItem from="1610020160428" duration="4174000" />
+      <workItem from="1610024553342" duration="1132000" />
     </task>
     <servers />
   </component>

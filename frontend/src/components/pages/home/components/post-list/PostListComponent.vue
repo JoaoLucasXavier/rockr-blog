@@ -1,5 +1,15 @@
 <template>
   <article>
+
+    <ul v-for="post of posts" :key="post.id">
+      <li>{{ post.author }}}</li>
+      <li>{{ post.title }}</li>
+      <li>{{ post.text }}</li>
+      <li>{{ post.image }}</li>
+      <br>
+      <hr>
+    </ul>
+
     <div class="p-line-1">
       <div class="p-line-1-image"></div>
       <div class="p-line-1-content"></div>
@@ -29,7 +39,23 @@
 </template>
 
 <script>
-export default {}
+import post from '@/services/post-service'
+
+export default {
+  name: 'PostList',
+  data () {
+    return {
+      posts: []
+    }
+  },
+  mounted() {
+    // console.log(response.data['Posts'][1])
+    post.listAll().then(response => {
+      console.log(response.data['Posts'])
+      this.posts = response.data['Posts']
+    })
+  },
+}
 </script>
 
 <style scoped>
