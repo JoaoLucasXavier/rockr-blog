@@ -17,7 +17,7 @@ class PostController extends Controller
     public function show($id): \Illuminate\Http\JsonResponse
     {
         $post = DB::table('posts AS p')
-            ->select(DB::raw('p.author, p.title, p.text, p.image, p.created_at '))
+            ->select(DB::raw('p.id, p.author, p.title, p.text, p.image, p.created_at '))
             ->where('p.id', $id)
             ->get();
         return response()->json(['Post' => $post], 200);

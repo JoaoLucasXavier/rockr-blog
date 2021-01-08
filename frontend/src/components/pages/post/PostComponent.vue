@@ -1,30 +1,25 @@
 <template>
   <article class="content">
     <div class="post">
-
-
-      <ul>
-        <li>{{ post.author }}</li>
-        <li>{{ post.title }}</li>
-        <li>{{ post.text }}</li>
-        <li>{{ post.image }}</li>
-        <br>
-        <hr>
-      </ul>
-
-
-      <header>
-        <div class="p-image">IMAGE</div>
-        <div class="p-infor">INFOR</div>
-      </header>
-      <article>texto</article>
+      <div class="header">
+        <div class="post-image">
+          <img :src="imgsrc()" height="640" width="640" alt="Post"/>
+        </div>
+        <div class="post-info">
+          <span>{{ new Date(post.created_at).toDateString() }}</span>
+          <p>{{ post.author }}</p>
+          <h3>{{ post.title }}</h3>
+        </div>
+      </div>
+      <div class="content">
+        <p>{{ post.text }}</p>
+      </div>
     </div>
   </article>
 </template>
 
 <script>
 import post from '@/services/post-service'
-
 
 export default {
   name: "Post",
@@ -34,13 +29,16 @@ export default {
     }
   },
   mounted() {
-    // console.log(response.data['Posts'][1])
-    // console.log(this.$route.params.postId)
     post.listById(this.$route.params.postId).then(response => {
       this.post = response.data.Post[0]
       console.log(this.post.text)
     })
   },
+  methods: {
+    imgsrc() {
+      return this.post.image;
+    },
+  }
 }
 </script>
 
@@ -54,31 +52,62 @@ export default {
 }
 
 .post {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: $postContentBg;
   min-height: 80vh;
   width: 80vw;
   margin-top: 50px;
-}
 
-.post > header {
-  display: flex;
-}
+  .header {
+    display: flex;
+    height: 640px;
+    width: 100%;
 
-.p-image {
-  background-color: red;
-  height: 640px;
-  width: 640px;
-}
+    .post-image {
+      height: 100%;
+      width: 50%;
+    }
 
-.p-infor {
-  padding: 200px;
-}
+    .post-info {
+      height: 100%;
+      width: 50%;
+      padding: 140px 80px;
 
-.post > article {
-  padding: 100px 200px;
-  height: 640px;
-  width: 640px;
-}
+      span {
+        display: inline-block;
+        padding-bottom: 30px;
+        color: #032937;
+        font-weight: 400;
+        font-size: 18px;
+      }
 
+      p {
+        padding-bottom: 30px;
+        color: #2D2D2D;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #F1A10A;
+        padding-bottom: 30px;
+        font-weight: 700;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .content {
+    padding: 80px 180px;
+    width: 100%;
+    background-color: white;
+
+    p {
+      color: #2D2D2D;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}
 </style>
