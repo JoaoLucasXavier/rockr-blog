@@ -21,13 +21,13 @@ Create a Web interface for the API you created. Must have the following features
 ### Screenshots
 
 1. Posts
-   ![](https://github.com/JoaoLucasXavier/user-authentication-laravel-app/blob/master/public/image/readme/02-novoUsuario.png)
+   ![](https://github.com/JoaoLucasXavier/rockr-blog/blob/main/screenshots/03.png)
 
 2. Single post
-   ![](https://github.com/JoaoLucasXavier/user-authentication-laravel-app/blob/master/public/image/readme/02-novoUsuario.png)
+   ![](https://github.com/JoaoLucasXavier/rockr-blog/blob/main/screenshots/01.png)
 
 3. Contact
-   ![](https://github.com/JoaoLucasXavier/user-authentication-laravel-app/blob/master/public/image/readme/02-novoUsuario.png)
+   ![](https://github.com/JoaoLucasXavier/rockr-blog/blob/main/screenshots/02.png)
    
 
 ### Setting
