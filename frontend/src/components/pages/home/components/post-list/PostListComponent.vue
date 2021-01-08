@@ -1,85 +1,72 @@
 <template>
   <article>
+    <div class="inline" v-for='index in posts.length' :key='index'>
+      <div class="inline" v-if="(index % 2 === 0)">
 
-    <!--    <ul v-for="(post, index) of posts" :key="post.id">-->
-    <!--      <li>{{ post.author }}</li>-->
-    <!--      <li>{{ post.title }}</li>-->
-    <!--      <li>{{ post.text }}</li>-->
-    <!--      <li>{{ post.image }}</li>-->
-    <!--      <li>-->
-    <!--        <router-link class="item" :to="{ name: 'post', params: { postId: post.id } }"><i-->
-    <!--            class="fas fa-angle-double-right ico"></i></router-link>-->
-    <!--      </li>-->
-    <!--      <li>{{ index + 1 }}</li>-->
-    <!--      <br>-->
-    <!--      <hr>-->
-    <!--    </ul>-->
-
-
-    <!--    <div v-for="(post) of posts" :key="post.id">-->
-    <div v-for='index in Math.floor(((posts.length / 3) * 2))' :key='index'>
-      <!--      <h1>{{posts.length}}</h1>-->
-      <h1>{{ index - 1 }}</h1>
-      <!--      <h6>{{ posts[index].image }}</h6>-->
-
-
-      <div v-if="(index % 2 === 1)">
-
-
-        <div v-if="(index % 2 === 0)">
-          <div class="p-line-1">
-            <div class="p-line-1-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
+        <div class="big-box big-box-left" v-if="(index % 3 === 0)">
+          <div class="post">
+            <div class="img">
+              <img :src="imgsrc(index -1)" alt=""/>
             </div>
-            <div class="p-line-1-content"></div>
-            <div class="p-line-1-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
-            </div>
-            <div class="p-line-1-content"></div>
-          </div>
-        </div>
-        <div v-else>
-          <div class="p-line-3">
-            <div class="p-line-3-content"></div>
-            <div class="p-line-3-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
-            </div>
-            <div class="p-line-3-content"></div>
-            <div class="p-line-3-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
+            <div class="content">
+              <span>{{ posts[index - 1].author }}</span>
+              <h3>{{ posts[index - 1].title }}</h3>
+              <p>{{ posts[index - 1].text.slice(0, 100) + " ....." }}</p>
+              <router-link class="single-post" :to="{ name: 'post', params: { postId: posts[index - 1].id } }"><i
+                  class="fas fa-angle-double-right ico" alt="View full post"></i></router-link>
             </div>
           </div>
         </div>
 
+        <div class="small-box" v-else>
+          <div class="post">
+            <div class="img">
+              <img :src="imgsrc(index -1)" alt=""/>
+            </div>
+            <div class="content">
+              <span>{{ posts[index - 1].author }}</span>
+              <h3>{{ posts[index - 1].title }}</h3>
+              <p>{{ posts[index - 1].text.slice(0, 100) + " ....." }}</p>
+              <router-link class="single-post" :to="{ name: 'post', params: { postId: posts[index - 1].id } }"><i
+                  class="fas fa-angle-double-right ico" alt="View full post"></i></router-link>
+            </div>
+          </div>
+        </div>
 
       </div>
-      <div v-else>
+      <div class="inline" v-else>
 
-
-        <div v-if="(index % 2 === 0)">
-          <div class="p-line-2">
-            <div class="p-line-2-blank"></div>
-            <div class="p-line-2-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
+        <div class="big-box big-box-right" v-if="(index % 3 === 0)">
+          <div class="post">
+            <div class="img">
+              <img :src="imgsrc(index -1)" alt=""/>
             </div>
-            <div class="p-line-2-content"></div>
+            <div class="content">
+              <span>{{ posts[index - 1].author }}</span>
+              <h3>{{ posts[index - 1].title }}</h3>
+              <p>{{ posts[index - 1].text.slice(0, 100) + " ....." }}</p>
+              <router-link class="single-post" :to="{ name: 'post', params: { postId: posts[index - 1].id } }"><i
+                  class="fas fa-angle-double-right ico" alt="View full post"></i></router-link>
+            </div>
           </div>
         </div>
-        <div v-else>
-          <div class="p-line-4">
-            <div class="p-line-4-image">
-              <img :src="imgsrc(posts[index].id)" height="326px" width="220px">
+
+        <div class="small-box" v-else>
+          <div class="post">
+            <div class="img">
+              <img :src="imgsrc(index -1)" alt=""/>
             </div>
-            <div class="p-line-4-blank"></div>
-            <div class="p-line-4-content"></div>
+            <div class="content">
+              <span>{{ posts[index - 1].author }}</span>
+              <h3>{{ posts[index - 1].title }}</h3>
+              <p>{{ posts[index - 1].text.slice(0, 100) + " ....." }}</p>
+              <router-link class="single-post" :to="{ name: 'post', params: { postId: posts[index - 1].id } }"><i
+                  class="fas fa-angle-double-right ico" alt="View full post"></i></router-link>
+            </div>
           </div>
         </div>
       </div>
-
-
     </div>
-    <!--    </div>-->
-
   </article>
 </template>
 
@@ -94,7 +81,6 @@ export default {
     }
   },
   mounted() {
-    // console.log(response.data['Posts'][1])
     post.listAll().then(response => {
       console.log(response.data['Posts'])
       this.posts = response.data['Posts']
@@ -102,98 +88,155 @@ export default {
   },
   methods: {
     imgsrc(id) {
-      // let result = `assets/movie_poster/${movieId}.jpg`;
-      // return result;
       return this.posts[id].image;
-    }
+    },
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+article {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
-.p-line-1 {
-  display: flex;
+.inline {
+  display: inline;
+}
+
+.small-box {
+  display: inline-block;
   height: 320px;
-  margin-top: 100px;
+  width: 50%;
+  margin-top: 50px;
+
+  .post {
+    height: 100%;
+    width: 100%;
+
+    .img {
+      height: 100%;
+      width: 35%;
+      float: left;
+
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      width: 65%;
+      float: right;
+      background-color: white;
+      padding: 30px;
+
+      span {
+        color: #2D2D2D;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #F1A10A;
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      p {
+        color: #2D2D2D;
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      .single-post {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        width: 10%;
+        margin-top: 10px;
+
+        .ico {
+          color: black;
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }
 
-.p-line-1 > div {
-  border: 1px solid black;
-  height: 100%;
+.big-box {
+  display: inline-block;
+  height: 540px;
+  width: 60%;
+  margin-top: 50px;
+
+  .post {
+    height: 100%;
+    width: 100%;
+
+    .img {
+      height: 100%;
+      width: 50%;
+      float: left;
+
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      width: 50%;
+      float: right;
+      background-color: white;
+      padding: 50px;
+
+      span {
+        color: #2D2D2D;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #F1A10A;
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      p {
+        color: #2D2D2D;
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      .single-post {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        width: 10%;
+        margin-top: 10px;
+
+        .ico {
+          color: black;
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }
 
-.p-line-1-image {
-  width: 320px;
+.big-box-left {
+  float: left;
 }
 
-.p-line-1-content {
-  flex-grow: 1;
+.big-box-right {
+  float: right;
 }
-
-.p-line-2 {
-  display: flex;
-  height: 320px;
-  margin-top: 100px;
-}
-
-.p-line-2 > div {
-  border: 1px solid black;
-  height: 100%;
-}
-
-.p-line-2-blank {
-  flex-grow: 1;
-}
-
-.p-line-2-image {
-  width: 320px;
-}
-
-.p-line-2-content {
-  flex-grow: 2;
-}
-
-.p-line-3 {
-  display: flex;
-  height: 320px;
-  margin-top: 100px;
-}
-
-.p-line-3 > div {
-  border: 1px solid black;
-  height: 100%;
-}
-
-.p-line-3-image {
-  width: 320px;
-}
-
-.p-line-3-content {
-  flex-grow: 1;
-}
-
-.p-line-4 {
-  display: flex;
-  height: 320px;
-  margin-top: 100px;
-}
-
-.p-line-4 > div {
-  border: 1px solid black;
-  height: 100%;
-}
-
-.p-line-4-blank {
-  flex-grow: 1;
-}
-
-.p-line-4-image {
-  width: 320px;
-}
-
-.p-line-4-content {
-  flex-grow: 2;
-}
-
 </style>

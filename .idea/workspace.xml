@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73290459-1ab8-429d-8a48-68b95ee94eaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +221,8 @@
       <workItem from="1609967442071" duration="19917000" />
       <workItem from="1610020160428" duration="4174000" />
       <workItem from="1610024553342" duration="10963000" />
-      <workItem from="1610042602069" duration="12298000" />
+      <workItem from="1610042602069" duration="24429000" />
+      <workItem from="1610073762910" duration="3829000" />
     </task>
     <servers />
   </component>
