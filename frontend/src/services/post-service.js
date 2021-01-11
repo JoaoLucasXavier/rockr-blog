@@ -2,9 +2,9 @@ import {http} from './api-service'
 
 export default {
     listAll: () => {
-        return http.get('post/index');
+        return http.get('posts');
     },
     listById: (id) => {
-        return http.get('post/show/' + id);
+        return http.get('posts/' + id);
     }
 }

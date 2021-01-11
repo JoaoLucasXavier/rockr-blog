@@ -30,8 +30,7 @@ export default {
   },
   mounted() {
     post.listById(this.$route.params.postId).then(response => {
-      this.post = response.data.Post[0]
-      console.log(this.post.text)
+      this.post = response.data[0]
     })
   },
   methods: {

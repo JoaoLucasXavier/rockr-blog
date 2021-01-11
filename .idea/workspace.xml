@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="73290459-1ab8-429d-8a48-68b95ee94eaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/run.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Api/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Api/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/home/components/post-list/PostListComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pages/post/PostComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/contact-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/contact-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/post-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/post-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +156,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -222,7 +229,9 @@
       <workItem from="1610020160428" duration="4174000" />
       <workItem from="1610024553342" duration="10963000" />
       <workItem from="1610042602069" duration="24429000" />
-      <workItem from="1610073762910" duration="14671000" />
+      <workItem from="1610073762910" duration="15120000" />
+      <workItem from="1610246532336" duration="12000" />
+      <workItem from="1610377887748" duration="5730000" />
     </task>
     <servers />
   </component>

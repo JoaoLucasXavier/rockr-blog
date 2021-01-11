@@ -6,10 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ContactController extends Controller
 {
-    public function store(Request $request): \Illuminate\Http\JsonResponse
+    public function creat(Request $request): \Illuminate\Http\JsonResponse
     {
         try {
             $contact = new Contact();
@@ -19,9 +20,9 @@ class ContactController extends Controller
             $contact->message = $request->message;
             $contact->save();
 
-            return response()->json(['New contact' => $contact], 201);
+            return response()->json(['New contact' => $contact], Response::HTTP_CREATED);
         } catch (Exception $e) {
-            return response()->json(['Error' => $e], 501);
+            return response()->json(['Error' => $e], Response::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
 }

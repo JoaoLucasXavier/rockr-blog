@@ -21,8 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 # Posts
-Route::get('/post/index', [PostController::class, 'index'])->name('List all posts');
-Route::get('/post/show/{id}', [PostController::class, 'show'])->name('List post by id');
+Route::get('/posts', [PostController::class, 'getAll']);
+Route::get('/posts/{id}', [PostController::class, 'getById']);
 
 # Contacts
-Route::post('/contact/store', [ContactController::class, 'store'])->name('New contact');
+Route::post('/contacts', [ContactController::class, 'creat']);
