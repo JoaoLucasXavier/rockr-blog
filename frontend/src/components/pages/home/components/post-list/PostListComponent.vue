@@ -82,8 +82,7 @@ export default {
   },
   mounted() {
     post.listAll().then(response => {
-      console.log(response.data['Posts'])
-      this.posts = response.data['Posts']
+      this.posts = response.data
     })
   },
   methods: {
